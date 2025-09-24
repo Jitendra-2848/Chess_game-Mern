@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.chessBoard {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  grid-template-rows: repeat(8, minmax(0, 1fr));
+  width: 400px;
+  height: 400px;
+}
+
+.flip {
+  transform: rotate(180deg);
+}
+
+.flip .piece {
+  transform: rotate(180deg);
+}
+
+.square.dark {
+  background: #b58863;
+  width: auto;
+  height: auto;
+}
+
+.square.light {
+  background: #f0d9b5;
+  width: auto;
+  height: auto;
+}
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.piece.white {
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 9);
+  font-size: 40px;
+}
+
+.piece.black {
+  color: black;
+}
+
+.piece {
+  user-select: none;
+  cursor: grab;
+  font-size: 40px;
+}
+
+.piece:active {
+  cursor: grabbing;
+}
+
+.dragging {
+  opacity: 0.5;
+}
+.role{
+  margin:10px ;
+}
+.Player{
+  margin:20px;
+}
+.spec{
+  
+  color:rgb(94, 212, 79);
+}
