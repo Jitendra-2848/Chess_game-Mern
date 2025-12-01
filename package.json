@@ -1,20 +1,31 @@
 {
-  "name": "new-folder",
+  "name": "chess-game-mern",
   "version": "1.0.0",
+  "description": "A real-time multiplayer chess game built with Node.js, Express, Socket.io, and Chess.js",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "chess",
+    "multiplayer",
+    "realtime",
+    "socket.io",
+    "nodejs",
+    "express",
+    "game"
+  ],
+  "author": "Jitendra Prajapati",
+  "license": "MIT",
   "dependencies": {
-    "chess.js": "^1.4.0",
+    "chess.js": "^1.0.0",
     "ejs": "^3.1.10",
-    "express": "^5.1.0",
-    "nodemon": "^3.1.10",
-    "socket.io": "^4.8.1"
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
